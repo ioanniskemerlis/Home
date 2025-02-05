@@ -84,6 +84,7 @@
   height: 0vh; /* ✅ Covers the lower half if needed */
   background: black;
   z-index: 2;
+  
 }
 
 /* ✅ Position text below the brain */
@@ -123,7 +124,7 @@
 .heading-group h4 {
   font-family: 'AvantGarde-Bold';
   font-feature-settings: 'ss01' 1;
-  font-size: clamp(1rem, 4vw, 4.2rem); /* Responsive font size */
+  font-size: clamp(2rem, 3.2vw, 4rem); /* Responsive font size */
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
@@ -133,16 +134,16 @@
 
 /* ✅ Paragraph positioned to the right */
 .text-group {
-  max-width: 30%;
-  text-align: left;
-  
+  max-width: 40%;
+  text-align: left; 
 }
 
+/* ✅ Make paragraph text more readable on mobile */
 .text-group p {
   margin: 0;
   font-family: 'AvantGarde-Medium';
-  font-size: clamp(0.5rem, 3vw, 1rem); /* Responsive font size */
-  line-height: 1.2;
+  font-size: clamp(0.9rem, 1vw, 1.2rem); /* ✅ Readable font size */
+  line-height: 1.4;
   color: #fbedda;
 }
 
@@ -160,14 +161,7 @@
   text-align: left;
 }
 
-/* ✅ Make paragraph text more readable on mobile */
-.text-group p {
-  margin: 0;
-  font-family: 'AvantGarde-Medium';
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ Readable font size */
-  line-height: 1.4;
-  color: #fbedda;
-}
+
 
 /* ✅ Center text on mobile */
 @media (max-width: 768px) {

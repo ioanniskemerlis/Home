@@ -67,7 +67,7 @@
 /* Heading styles */
 .image-text h2 {
   font-family: 'AvantGarde-Bold';
-  font-size: clamp(3rem, 5vw, 6rem); /* Responsive font size */
+  font-size: clamp(1rem, 4vw, 6rem); /* Responsive font size */
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
@@ -79,7 +79,7 @@
 /* Subheading */
 .image-text h3 {
   font-family: 'AvantGarde-Medium';
-  font-size: clamp(1.5rem, 4vw, 3.5rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 3vw, 3.5rem); /* Responsive font size */
   line-height: 1;
   color: #fbedda;
   font-feature-settings: 'ss01' 1;

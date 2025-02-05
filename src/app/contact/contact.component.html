@@ -4,7 +4,7 @@
     <!-- Left Side: Text + Form -->
     <div class="contact-content">
       <h2>GET IN TOUCH</h2>
-      <form (submit)="submitForm($event)">
+      <form (submit)="submitForm()">
         <input type="text" [(ngModel)]="name" name="name" placeholder="Name" required>
         <input type="phone" [(ngModel)]="phone" name="phone" placeholder="Phone" required>
         <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>

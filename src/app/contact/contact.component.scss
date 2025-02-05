@@ -104,7 +104,7 @@ button:hover {
 .contact-image {
   width: 100%; /* ✅ Makes the image bigger */
   height: 100%;
-  background: url('/assets/getintouch.jpg') no-repeat;
+  background: url('../../assets/getintouch.jpg') no-repeat;
   background-size: cover; /* ✅ Ensures full coverage */
   background-position: -20%; /* ✅ Shifts the image to the right */
   min-width: 500px; /* ✅ Prevents image from becoming too small */

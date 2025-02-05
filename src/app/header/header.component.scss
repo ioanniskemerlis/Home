@@ -23,8 +23,9 @@
 
 /* ✅ Logo */
 .logo {
-  font-family: 'AvantGarde-Medium';
+  font-family: 'AvantGarde-Bold';
   font-size: clamp(1rem, 2vw, 1.6rem);
+  font-feature-settings: 'ss01' 1;
   color: #fbedda;
   text-decoration: none;
 }
