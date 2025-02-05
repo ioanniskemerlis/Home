@@ -1,0 +1,20 @@
+<section class="navbar">
+  <div class="navbar-container">
+    <!-- Left Side: Logo -->
+    <a href="/" class="logo">IOANNIS KEMERLIS</a>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span [class.open]="isMenuOpen"></span>
+      <span [class.open]="isMenuOpen"></span>
+      <span [class.open]="isMenuOpen"></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" [class.active]="isMenuOpen">
+      <a href="#" (click)="scrollToTop()">Home</a>
+      <a href="https://github.com/ioanniskemerlis" target="_blank">Projects</a>
+      <button class="contact-button" (click)="scrollToContact()">Contact</button>
+    </nav>
+  </div>
+</section>

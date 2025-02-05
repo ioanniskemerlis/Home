@@ -1,0 +1,56 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  color: #fbedda;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px; /* Ensures spacing */
+}
+
+/* ✅ Add a subtle grain effect */
+.footer .grain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ✅ Text Styling */
+.footer p {
+  font-family: 'AvantGarde-Medium';
+  font-size: 0.9rem;
+  font-feature-settings: 'ss01' 1;
+  margin: 0;
+  gap: 15px;
+  z-index: 2;
+}
+
+/* ✅ Social Links */
+.social-links {
+  display: flex;
+  gap: 60px;
+  z-index: 2;
+}
+
+/* ✅ Social Icons */
+.social-links a img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effects */
+.social-links a:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.8;
+}

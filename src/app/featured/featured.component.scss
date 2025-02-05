@@ -1,0 +1,130 @@
+.featured {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black; /* ✅ Keeps the black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.grain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Container for the image & text */
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers the border */
+  background-color: black; /* ✅ Adds black background */
+  padding: 10px 0; /* ✅ Optional: Adds some spacing */
+}
+
+.border {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+/* Image styling */
+.image-container img {
+  width: auto;
+  max-width: 90%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.image-text {
+  position: absolute;
+  top: 0%; /* Keeps text in the upper part */
+  left: 78%;
+  transform: translateX(-50%); /* Centers text properly */
+  text-align: center;
+  width: 100%;
+}
+
+/* Heading styles */
+.image-text h2 {
+  font-family: 'AvantGarde-Bold';
+  font-size: clamp(3rem, 5vw, 6rem); /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fbedda;
+  font-feature-settings: 'ss01' 1;
+  margin: 0; /* Removes default spacing */
+}
+
+/* Subheading */
+.image-text h3 {
+  font-family: 'AvantGarde-Medium';
+  font-size: clamp(1.5rem, 4vw, 3.5rem); /* Responsive font size */
+  line-height: 1;
+  color: #fbedda;
+  font-feature-settings: 'ss01' 1;
+  margin: 10px 0 0 0; /* Prevents unexpected movement */
+  position: relative; /* Allows fine movement */
+  left: 5%; /* Moves text slightly to the right */
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .featured {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .image-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;    
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+    transform: translateX(10%);   
+  }
+
+  .image-text {
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-text h2,
+  .image-text h3 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-align: center;
+  }
+
+  .image-text h3 {
+    left: 0;
+  }
+}

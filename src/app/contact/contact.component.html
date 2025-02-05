@@ -1,0 +1,25 @@
+<section class="contact">
+  <img class="grain" src="assets/grain.webp" loading="lazy" width="2120" sizes="100vw">
+  <div class="contact-container">
+    <!-- Left Side: Text + Form -->
+    <div class="contact-content">
+      <h2>GET IN TOUCH</h2>
+      <form (submit)="submitForm($event)">
+        <input type="text" [(ngModel)]="name" name="name" placeholder="Name" required>
+        <input type="phone" [(ngModel)]="phone" name="phone" placeholder="Phone" required>
+        <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+        <textarea [(ngModel)]="message" name="message" placeholder="Write your message" required></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+      <p *ngIf="isSubmitted" class="success-message">
+        ✅ Your message has been sent successfully!
+      </p>
+    </div>
+
+    <!-- Right Side: Background Image -->
+    <div class="contact-image"></div>
+  </div>
+  <div class="border-container">
+    <img class="border" src="assets/border.PNG" loading="lazy">
+  </div>
+</section>

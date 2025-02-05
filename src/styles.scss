@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'AvantGarde';
+    src: url('/assets/fonts/ITC Avant Garde Gothic Pro-Bold.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Book Oblique.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Book.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Demi Oblique.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Demi.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Medium Oblique.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-Medium.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-XLight Oblique.otf') format('opentype'),
+         url('/assets/fonts/ITC Avant Garde Gothic Pro-XLt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AvantGarde-Bold';
+    src: url('assets/fonts/ITC Avant Garde Gothic Pro-Bold.otf') format('opentype');
+    font-weight: bold;
+    
+}
+@font-face {
+  font-family: 'AvantGarde-Medium';
+  src: url('assets/fonts/ITC Avant Garde Gothic Pro-Medium.otf') format('opentype');
+  font-weight: normal;
+  
+}
+
+// html, body {
+//   margin: 0; /* ✅ Removes the default margin */
+//   padding: 0;
+//   overflow-x: hidden; /* ✅ Prevents horizontal scrolling */
+//   width: 100%;
+//   height: 100%;
+//   box-sizing: border-box; /* ✅ Ensures no extra space */
+// }
+
+/* ✅ Ensure all elements follow the same rule */
+* {
+  box-sizing: border-box;
+  margin: 0; /* ✅ Removes all default margins */
+  padding: 0;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; /* ✅ Ensures it matches the full viewport width */
+  max-width: 100%;
+  scroll-snap-type: y mandatory; /* ✅ Enables snap scrolling */
+  scroll-padding-top: 0;
+}
+
+
+section {
+  height: 100vh;
+  scroll-snap-align: start; /* ✅ Snaps to the start of each section */
+  scroll-snap-stop: always; /* ✅ Ensures full snap */
+}
+

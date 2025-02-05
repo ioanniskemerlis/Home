@@ -1,0 +1,125 @@
+/* ✅ Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* ✅ Navbar Container */
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ Logo */
+.logo {
+  font-family: 'AvantGarde-Medium';
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  color: #fbedda;
+  text-decoration: none;
+}
+
+/* ✅ Desktop Navigation Links */
+.nav-links {
+  font-family: 'AvantGarde-Medium';
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #fbedda;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+/* ✅ Style Navigation Links */
+.nav-links a {
+  font-family: 'AvantGarde-Medium';
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #fbedda !important; /* ✅ Ensures correct color */
+  text-decoration: none !important; /* ✅ Removes underline */
+  transition: color 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effect */
+.nav-links a:hover {
+  text-decoration: underline !important; /* Optional: Add underline on hover */
+}
+
+/* ✅ Visited Links (Fix Purple Issue) */
+.nav-links a:visited {
+  color: #fbedda !important; /* Keep the same color even after clicking */
+}
+
+
+/* ✅ Contact Button */
+.contact-button {
+  background-color: #db3006;
+  font-family: 'AvantGarde-Medium';
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #fbedda;
+  text-decoration: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e78a20;
+}
+
+/* ✅ Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fbedda;
+  transition: 0.3s;
+}
+
+/* ✅ Show Hamburger on Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
+/* ✅ Mobile Navigation: Hidden by Default */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    text-align: center;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Transition not working */
+  }
+  /* ✅ Show menu when active */
+  .nav-links.active {
+    max-height: 350px; /* Expand properly */
+  }
+}
