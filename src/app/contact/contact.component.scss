@@ -100,19 +100,19 @@ button:hover {
   background: #db3006;
 }
 
-/* ✅ Right Side: Image */
+
 .contact-image {
-  width: 100%; /* ✅ Makes the image bigger */
+  width: 100%; 
   height: 100%;
   background: url('../../assets/getintouch.jpg') no-repeat;
-  background-size: cover; /* ✅ Ensures full coverage */
-  background-position: -20%; /* ✅ Shifts the image to the right */
-  min-width: 500px; /* ✅ Prevents image from becoming too small */
+  background-size: cover; 
+  background-position: -20%; 
+  min-width: 500px; 
   scale: (1.3);
   
 }
 
-//* ✅ Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -121,20 +121,20 @@ button:hover {
     height: 100vh;
   }
 
-  /* ✅ Move Text Further Down */
+ 
   .contact-content {
     width: 90%;
     max-width: 600px;
     height: 60vh;
     text-align: center;
-    margin-top: 15%; /* Moves text further down */
+    margin-top: 15%; 
   }
 
   .contact-content h2 {
     font-size: clamp(2.5rem, 1vw, 4rem);
   }
 
-  /* ✅ Form Inputs Full Width on Mobile */
+  
   input, textarea {
     width: 100%;
     font-size: 1rem;
@@ -147,7 +147,7 @@ button:hover {
     font-size: 16px;
   }
 
-  /* ✅ Adjust Background Image */
+  
   .contact-image {
     width: 100%;
     height: 40vh;

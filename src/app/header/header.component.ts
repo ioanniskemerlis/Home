@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // ✅ Import CommonModule
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule], // ✅ Add CommonModule here
+  imports: [CommonModule], 
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isMenuOpen = false; // Controls the mobile menu state
+  isMenuOpen = false; 
 
-  /** Scrolls smoothly to the top */
+  
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     this.closeMenu();
   }
 
-  /** Scrolls smoothly to the Contact section */
+  
   scrollToContact(): void {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -26,12 +26,12 @@ export class HeaderComponent {
     }
   }
 
-  /** Toggles the mobile menu */
+ 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  /** Closes the menu when clicking a link */
+  
   closeMenu(): void {
     this.isMenuOpen = false;
   }

@@ -57,38 +57,38 @@
 
 .image-text {
   position: absolute;
-  top: 0%; /* Keeps text in the upper part */
+  top: 0%; 
   left: 78%;
-  transform: translateX(-50%); /* Centers text properly */
+  transform: translateX(-50%); 
   text-align: center;
   width: 100%;
 }
 
-/* Heading styles */
+
 .image-text h2 {
   font-family: 'AvantGarde-Bold';
-  font-size: clamp(1rem, 4vw, 6rem); /* Responsive font size */
+  font-size: clamp(1rem, 4vw, 6rem); 
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
   color: #fbedda;
   font-feature-settings: 'ss01' 1;
-  margin: 0; /* Removes default spacing */
+  margin: 0; 
 }
 
-/* Subheading */
+
 .image-text h3 {
   font-family: 'AvantGarde-Medium';
-  font-size: clamp(1.5rem, 3vw, 3.5rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 3vw, 3.5rem); 
   line-height: 1;
   color: #fbedda;
   font-feature-settings: 'ss01' 1;
-  margin: 10px 0 0 0; /* Prevents unexpected movement */
-  position: relative; /* Allows fine movement */
-  left: 5%; /* Moves text slightly to the right */
+  margin: 10px 0 0 0; 
+  position: relative; 
+  left: 5%; 
 }
 
-/* ✅ Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .featured {
     flex-direction: column;
